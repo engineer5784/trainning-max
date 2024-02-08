@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*----------Estilos logo----------*/
+.logo {
+    width: 13.5rem;
+    height: 4.9rem;
+    margin-right: auto; 
+}
+
+/*----------Estilos menú----------*/
+.header_menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}
+
+/* .header_menu > li {
+    cursor: pointer;
+} */
+
+.header_menu > li:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* ----------Estilos responsive---------- */
+@media  screen and (max-width: 768px) {
+    .header>:nth-child(2) {
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+
+    .header_menu {
+        flex-direction: column;
+        background-color: #3c3f45;
+        padding: 2rem;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,150 @@
+.Reasons {
+    padding: 0 2rem;
+    display: flex;
+    /* grid-template: 2rem ; */
+    gap: 2rem;
+    /* margin-bottom: 3rem; */
+}
+
+.left_reasons {
+    flex: 1 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-auto-rows: 1fr;
+}
+
+.left_reasons>img {
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.left_reasons>img:hover {
+    transform: scale(1.05);
+}
+
+
+.left_reasons> :nth-child(1) {
+    width: 12rem;
+    grid-row: 1/3;
+    height: 28rem;
+}
+
+.left_reasons> :nth-child(2) {
+    width: auto;
+    height: 16rem;
+    grid-column: 2/4;
+}
+
+.left_reasons> :nth-child(3) {
+    width: 14rem;
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.left_reasons> :nth-child(4) {
+    width: 10rem;
+    grid-row: 2;
+    grid-column: 3/4;
+    height: 11.2rem;
+}
+
+.right_reasons {
+    flex: 1 1;
+    text-transform: uppercase;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.right_reasons>span {
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.right_reasons>div {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.stroke_text {
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.details_right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.details_right>div {
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.details_right>div>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ----------Estilos partners---------- */
+.partners {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.partners>img {
+    gap: 1rem;
+}
+
+/* ----------Estilos responsive---------- */
+@media screen and (max-width: 768px) {
+    .Reasons {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .left_reasons {
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+
+    .left_reasons> :nth-child(1) {
+        width: 7rem;
+        height: 17rem;
+    }
+
+    .left_reasons> :nth-child(2) {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .left_reasons> :nth-child(3) {
+        width: 7rem;
+    }
+
+    .left_reasons> :nth-child(4) {
+        width: 7rem;
+        height: 6rem;
+    }
+
+    /* .stroke_text {
+        font-size: normal;
+    } */
+
+    div>span:nth-child(2) {
+        font-size: smaller;
+        /* Cambiar el tamaño del texto a smaller */
+    }
+
+    .partners>img {
+        width: 3rem;
+    }
+}

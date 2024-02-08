@@ -1,0 +1,16 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.carouselContainer {
+    margin: 0 auto; 
+    max-width: 600px; 
+  }
+  
+  /* Estilos para las imágenes dentro del Carousel */
+  /* Intenta ajustar los estilos del contenedor de las imágenes dentro de AliceCarousel */
+  .alice-carousel img {
+    width: auto; /* Ajusta el ancho automáticamente */
+  max-height: 300px; /* Altura máxima de las imágenes (ajusta según tu preferencia) */
+  border-radius: 8px; /* Borde redondeado para las imágenes */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
